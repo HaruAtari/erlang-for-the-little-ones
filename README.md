@@ -5,3 +5,4 @@ Erlang для самых маленьких
 ----------
   1. [Типы данных, переменные, списки и кортежи](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/01/index.md)
   2. [Модули и функции](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/02/index.md)
+  3. [Базовый синтаксис функций](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/03/index.md)
