@@ -6,7 +6,9 @@
     bmi_tell/1, 
     lucky_number/1, 
     lucky_atom/1,
-    safe_division/2
+    safe_division/2,
+    if_bmi_tell/1,
+    assessment_of_temp/1
 ]).
 -author("Haru Atari").
 
@@ -51,3 +53,22 @@ safe_division(X, Y) when is_number(X), is_number(Y), Y /= 0 ->
     X / Y;
 safe_division(_, _) ->
     false.
+
+if_bmi_tell(Bmi) ->
+    if Bmi =< 18.5 -> "You're underweight.";
+       Bmi =< 25   -> "You're supposedly normal.";
+       Bmi =< 30   -> "You're fat.";
+       true        -> "You're very fat."
+    end.
+
+assessment_of_temp(Temp) ->
+    case Temp of
+        {X, celsius} when 20 =< X, X =< 45 ->
+            'favorable';
+        {X, kelvin} when 293 =< X, X =< 318 ->
+            'scientifically favorable';
+        {X, fahrenheit} when 68 =< X, X =< 113 ->
+            'favorable in the US'
+  end.
+
+
