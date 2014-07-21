@@ -18,7 +18,47 @@
     in operator  -/2
         called as 10 - "5"
 ```
-Для преобразования типов язык предоставляет ряд функций.
 
 Преобразование типов
 --------------------
+
+Для преобразования типов в Erlang используются функции стандартной библиотеки (находятся в модуле `Erlang`). Имена этих функций формируются по следующей схеме: `<исходный_тип>_to_<небходимый_тип>`. Вот полный перечень таких функций:
+- [`atom_to_binary/2`](http://www.erlang.org/doc/man/erlang.html#atom_to_binary-2)
+- [`atom_to_list/1`](http://www.erlang.org/doc/man/erlang.html#atom_to_list-1)
+- [`binary_to_atom/2`](http://www.erlang.org/doc/man/erlang.html#binary_to_atom-2)
+- [`binary_to_existing_atom/2`](http://www.erlang.org/doc/man/erlang.html#binary_to_existing_atom-2)
+- [`binary_to_list/1`](http://www.erlang.org/doc/man/erlang.html#binary_to_list-1)
+- [`bitstring_to_list/1`](http://www.erlang.org/doc/man/erlang.html#bitstring_to_list-1)
+- [`binary_to_term/1`](http://www.erlang.org/doc/man/erlang.html#binary_to_term-1)
+- [`float_to_list/1`](http://www.erlang.org/doc/man/erlang.html#float_to_list-1)
+- [`fun_to_list/1`](http://www.erlang.org/doc/man/erlang.html#fun_to_list-1)
+- [`integer_to_list/1`](http://www.erlang.org/doc/man/erlang.html#integer_to_list-1)
+- [`integer_to_list/2`](http://www.erlang.org/doc/man/erlang.html#integer_to_list-2)
+- [`iolist_to_binary/1`](http://www.erlang.org/doc/man/erlang.html#iolist_to_binary-1)
+- [`iolist_to_atom/1`](http://www.erlang.org/doc/man/erlang.html#iolist_to_atom-1)
+- [`list_to_atom/1`](http://www.erlang.org/doc/man/erlang.html#list_to_atom-1)
+- [`list_to_binary/1`](http://www.erlang.org/doc/man/erlang.html#list_to_binary-1)
+- [`list_to_bitstring/1`](http://www.erlang.org/doc/man/erlang.html#list_to_bitstring-1)
+- [`list_to_existing_atom/1`](http://www.erlang.org/doc/man/erlang.html#list_to_existing_atom-1)
+- [`list_to_float/1`](http://www.erlang.org/doc/man/erlang.html#list_to_float-1)
+- [`list_to_integer/2`](http://www.erlang.org/doc/man/erlang.html#list_to_integer-2)
+- [`list_to_pid/1`](http://www.erlang.org/doc/man/erlang.html#list_to_pid-1)
+- [`list_to_tuple/1`](http://www.erlang.org/doc/man/erlang.html#list_to_tuple-1)
+- [`pid_to_list/1`](http://www.erlang.org/doc/man/erlang.html#pid_to_list-1)
+- [`port_to_list/1`](http://www.erlang.org/doc/man/erlang.html#port_to_list-1)
+- [`ref_to_list/1`](ref_to_list-1)
+- [`term_to_binary/1`](term_to_binary-1)
+- [`term_to_binary/2`](term_to_binary-2)
+- [`tuple_to_list/1`](tuple_to_list-1)
+
+И пример их использования:
+```erlang
+1> erlang:integer_to_list(123).
+"123"
+2> erlang:atom_to_list(false).
+"false"
+3> erlang:iolist_to_atom(123).
+** exception error: bad argument
+    in function  iolist_to_atom/1
+        called as iolist_to_atom(123)
+```
