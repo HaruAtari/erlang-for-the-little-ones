@@ -46,10 +46,10 @@
 - [`list_to_tuple/1`](http://www.erlang.org/doc/man/erlang.html#list_to_tuple-1)
 - [`pid_to_list/1`](http://www.erlang.org/doc/man/erlang.html#pid_to_list-1)
 - [`port_to_list/1`](http://www.erlang.org/doc/man/erlang.html#port_to_list-1)
-- [`ref_to_list/1`](ref_to_list-1)
-- [`term_to_binary/1`](term_to_binary-1)
+- [`ref_to_list/1`](http://www.erlang.org/doc/man/erlang.html#ref_to_list-1)
+- [`term_to_binary/1`](http://www.erlang.org/doc/man/erlang.html#term_to_binary-1)
 - [`term_to_binary/2`](term_to_binary-2)
-- [`tuple_to_list/1`](tuple_to_list-1)
+- [`tuple_to_list/1`](hhttp://www.erlang.org/doc/man/erlang.html#ttp://www.erlang.org/doc/man/erlang.html#tuple_to_list-1)
 
 И пример их использования:
 ```erlang
