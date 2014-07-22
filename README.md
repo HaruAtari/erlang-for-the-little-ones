@@ -7,3 +7,4 @@ Erlang для самых маленьких
   2. [Модули и функции](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/02/README.md)
   3. [Базовый синтаксис функций](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/03/README.md)
   4. [Система типов](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/04/README.md)
+  5. [Рекурсия](https://github.com/HaruAtari/Erlang-for-the-little-ones/blob/master/05/README.md)
